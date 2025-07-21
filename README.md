@@ -1,5 +1,5 @@
 # playnite-LocalLibrary
-Adds a library to Playnite for managing locally stored games.
+Adds a library to Playnite for managing locally stored games. This is just a personal fork, so don't expect this to be constantly updated.
 
 
 ## Instructions
