@@ -121,7 +121,7 @@ namespace LocalLibrary
         {
             logger.Info($"GetMainInstaller({dir})");
             string gameInstaller = "";
-            List<string> validExt = new List<string> { ".iso", ".rar", ".zip", ".7z", ".exe", ".msi", ".bat", ".ps", ".ps1" };
+            List<string> validExt = new List<string> { ".iso", ".rar", ".zip", ".7z", ".001", ".exe", ".msi", ".bat", ".ps", ".ps1" };
             List<string> prefExt = new List<string> { ".exe", ".msi", ".bat", ".ps", ".ps1" };
             List<string> dirFiles = Directory.GetFiles(dir).ToList();
             logger.Info($"GetMainInstaller({dir}) - Found {dirFiles.Count} files in directory");
@@ -411,7 +411,7 @@ namespace LocalLibrary
                     NoItems.Add(game);
                     continue;
                 }
-                List<string> exts = new List<string> { ".exe", ".iso", ".rar", ".zip", ".7z", ".bat", ".ps", ".ps1" };
+                List<string> exts = new List<string> { ".exe", ".iso", ".rar", ".zip", ".7z", ".001", ".bat", ".ps", ".ps1" };
                 if (exts.Contains(Path.GetExtension(gameImagePath), StringComparer.OrdinalIgnoreCase) || File.Exists(gameImagePath))
                 {
                     gameImagePath = Path.GetDirectoryName(gameImagePath);

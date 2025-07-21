@@ -251,7 +251,7 @@ namespace LocalLibrary
             string exce = "";
             string command = null;
             string driveLetter = null;
-            string[] archives = { ".7z", ".rar", ".zip" };
+            string[] archives = { ".7z", ".rar", ".zip", ".001" };
             string[] executables = { ".exe", ".msi" };
             string[] scripts = { ".bat", ".ps1", ".ps" };
             bool archive = false;
